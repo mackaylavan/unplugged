@@ -97,14 +97,170 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+header{
+display:flex;
+justify-content: center;
+align-items: center;
+flex-flow:row wrap;
+}
+
+.header-divider{
+
+}
+
+header .content-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+.content-wrapper{
+display: flex;
+}
 
 
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  
+  header nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+.hero-area{
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
+aside{
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
+.form-discription{
 
+}
 
+#form{
 
+}
 
+.features{
+display: flex;
+justify-content: center;
+align-self: center;
+flex-flow: row wrap;
+}
+
+.features-item{
+align-content: center;
+flex-flow: row wrap;
+}
+
+.font-awesome-icon{
+align-content: center;
+}
+
+.features-item-discription{
+align-content: center;
+}
+
+.reviews{
+display: flex;
+flex-flow: row wrap; 
+}
+
+footer{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: row wrap;
+}
+
+.footer-content{
+
+}
+
+.contact{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.social{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.social-icons{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.copyright{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.mission{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: row wrap; 
+}
+
+.mission-content{
+
+}
+
+.mission-statement{
+
+}
+
+.mission-text{
+
+}
+
+.map{
+
+}
+
+figure{
+
+}
+
+.contact-section{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: row wrap; 
+}
+
+address{
+
+}
+
+.faq{
+display: flex;
+flex-flow: row wrap;
+}
+
+.faq .content-wrapper{
+    display:flex; 
+    flex-flow: row wrap;
+}
+.question{
+
+}
 
 
 
