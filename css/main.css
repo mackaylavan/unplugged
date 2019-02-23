@@ -105,7 +105,7 @@ flex-flow:row wrap;
 }
 
 .header-divider{
-
+width: 10%;
 }
 
 header .content-wrapper{
@@ -113,9 +113,12 @@ header .content-wrapper{
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    margin: 0;
 }
+
 .content-wrapper{
 display: flex;
+width: 90%;
 }
 
 
@@ -124,11 +127,13 @@ header nav {
     justify-content: space-around;
     align-items: center;
     flex-flow: row wrap;
+    width: 60%;
   }
   
   header nav ul {
     display: flex;
     justify-content: space-around;
+    width: 45%;
   }
   
 .hero-area{
@@ -137,10 +142,17 @@ justify-content: center;
 align-items: center;
 }
 
-aside{
+.hero-area h1{
+    margin: 20px; 
+}
+
+
+aside
+{
 display: flex;
 justify-content: center;
 align-items: center;
+margin: 20px;
 }
 
 .form-discription{
@@ -161,8 +173,12 @@ flex-flow: row wrap;
 .features-item{
 align-content: center;
 flex-flow: row wrap;
+width: 60%;
 }
 
+.features p{
+    margin: 0px;
+}
 .font-awesome-icon{
 align-content: center;
 }
@@ -176,6 +192,10 @@ display: flex;
 flex-flow: row wrap; 
 }
 
+.reviews h3{
+    width:50%;
+}
+
 footer{
 display: flex;
 justify-content: center;
@@ -183,8 +203,13 @@ align-items: center;
 flex-flow: row wrap;
 }
 
-.footer-content{
+footer .content-wrapper{
+width: 55%;
+margin: 50px 0;
+}
 
+footer p{
+    margin: 0px;
 }
 
 .contact{
