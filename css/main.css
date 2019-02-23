@@ -152,16 +152,10 @@ aside
 display: flex;
 justify-content: center;
 align-items: center;
+flex-flow: row wrap;
 margin: 20px;
 }
 
-.form-discription{
-
-}
-
-#form{
-
-}
 
 .features{
 display: flex;
@@ -183,13 +177,18 @@ width: 60%;
 align-content: center;
 }
 
-.features-item-discription{
+.features-item-description{
 align-content: center;
 }
 
 .reviews{
 display: flex;
 flex-flow: row wrap; 
+}
+
+.reviews .content-wrapper{
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .reviews h3{
@@ -216,6 +215,7 @@ footer p{
 display: flex;
 justify-content: center;
 align-items: center;
+flex-flow: row wrap;
 }
 
 .social{
@@ -243,35 +243,11 @@ align-items: center;
 flex-flow: row wrap; 
 }
 
-.mission-content{
-
-}
-
-.mission-statement{
-
-}
-
-.mission-text{
-
-}
-
-.map{
-
-}
-
-figure{
-
-}
-
 .contact-section{
 display: flex;
 justify-content: center;
 align-items: center;
 flex-flow: row wrap; 
-}
-
-address{
-
 }
 
 .faq{
@@ -283,12 +259,6 @@ flex-flow: row wrap;
     display:flex; 
     flex-flow: row wrap;
 }
-.question{
-
-}
-
-
-
 
 
 
@@ -379,10 +349,140 @@ flex-flow: row wrap;
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+/** TABLET STYLES **/
 
-   @media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+  @media screen and (min-width: 768px) {
+  .content-wrapper{
+      max-width: 640px; 
+      margin: 100px 0; 
+  }
+
+  header{
+  display: flex; 
+  justify-content: center;
+
+  }
+
+  header .content-wrapper{
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  }
+
+  header nav{
+      width:25%;
+  }
+
+  header nav ul{
+  justify-content: flex-end;
+  }
+  
+  .header-divider{
+      display: none;
+  }
+
+  aside .content-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-flow: row;
+
+  }
+
+  aside .content-wrapper .form,
+  aside .content-wrapper .form-description{
+      width: 50%;
+      margin: 0; 
+  }
+    
+  .features article{
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  flex-flow:row wrap; 
+  flex-basis: 20%;
+
+  }
+  
+  .features .features-item-description {
+  width: 25%;
+  }
+  .reviews article{
+ display:flex;
+ justify-content: center;
+  }
+
+  .reviews article div{
+  width: 50%;
+  }
+  
+  footer .content-wrapper{
+      width: 75%;
+      margin: 100px 0; 
+  }
+
+  .footer-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  footer .contact{
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 0;
+  }
+
+  footer .copyright{
+  display: flex;
+  width: 30%;
+  }
+  .faq content{
+      flex-basis: 90%;
+  }
+  
+
+  .mission-content{
+      display:flex;
+      justify-content:center;
+      align-items: right;
+  }
+
+  .mission-content p {
+      width:50%;
+  }
+
+  .contact-section, 
+  .content-wrapper h2 {
+      width: 90%; 
+    
+  }
+
+  .contact-content {
+      display: flex;
+      justify-content: center ;
+      align-items: right;
+      }
+
+.faq .content-wrapper {
+    justify-content: space-between;
 }
+
+.faq-content {
+    flex-basis: 40%;
+}
+
+.faq h2 {
+    width: 100%;
+}
+ }
+
+  /*** DESKTOP STYLES ***/ 
+
+  @media screen and (min-width 1200px){
+ 
+  }
+
+
 
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
