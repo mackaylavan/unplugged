@@ -111,6 +111,7 @@ color: #e2e3ed;
 ul,
 ol {
 font-size: 1.125em;
+text-emphasis: none;
 }
 
 a{
@@ -119,17 +120,21 @@ text-decoration: none;
 }
 
 h1{
+    font-family: 'Poppins', sans-serif;
     font-size: 3em; 
+    font-weight: 500;
 }
 h2 {
 font-family: 'Poppins', sans-serif;
 font-size: 2.25em; 
+font-weight: 500;
 }
 
 h3, 
 h4 {
 font-family: 'Poppins', sans-serif;
 font-size: 1.875em;
+font-weight: 500;
 }
 
 p{
@@ -160,6 +165,7 @@ justify-content: center;
 align-items: center;
 flex-flow:row wrap;
 padding: 15px 0;
+background: #202322;
 }
 
 
@@ -185,12 +191,15 @@ header nav {
     align-items: center;
     flex-flow: row wrap;
     width: 60%;
+    background: #202322;
   }
   
   header nav ul {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    text-transform: uppercase;
+    list-style: none;
   }
 
 footer{
@@ -199,6 +208,7 @@ justify-content: center;
 align-items: center;
 flex-flow: row wrap;
 flex-direction: column;
+background: #202322;
 }
 
 
@@ -227,6 +237,33 @@ footer .social-icons {
         margin: 20px 0;
       }
 
+
+      aside .form {
+        margin-top: 30px;
+      }
+       
+      input[type=text] {
+        box-sizing: border-box;
+        width: 100%;
+        color: #2a423a;
+        font-style: italic;
+      }
+       
+      input[type=button] {
+        width: 100%;
+        padding: 20px 0;
+        margin-top: 20px;
+        background-color: #2a423a;
+        font-family: 'Poppins', Helvetica, Arial, sans-serif;
+        font-weight: 500;
+        font-size: 1.125em;
+        color: #e2e3ed;
+        border: none;
+        text-align: center;
+        text-transform: uppercase;
+      }
+      
+
 /***************** MOBILE STYLES ***************************/ 
 
 /**------- HOMEPAGE -----------**/ 
@@ -240,6 +277,8 @@ align-items: center;
 }
 
 .hero-area h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     margin: 20px; 
 }
 
@@ -250,6 +289,8 @@ aside
 display: flex;
 justify-content: center;
 align-items: center;
+flex-flow: row wrap;
+background: #527158;
 }
 
 /** FEATURES **/ 
@@ -278,6 +319,7 @@ margin: 30px 0;
 
 .features p{
     margin: 0px;
+    text-align: center;
 }
 
 
@@ -295,6 +337,7 @@ align-content: center;
 display: flex;
 justify-content: center;
 flex-flow: row wrap; 
+background: #2a423a;
 }
 
 .reviews h2 {
@@ -313,6 +356,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-flow: row wrap; 
+background: #638066;
 }
 
 .contact-section{
@@ -320,9 +364,14 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-flow: row wrap; 
+background: #2a423a;
 }
 
-.contact-content p {
+.contact-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
     margin: 0;
   }
 
@@ -333,6 +382,7 @@ flex-flow: row wrap;
     justify-content: center;
     align-items: center;
     flex-flow: row wrap;
+    background: #638066;
 }
 
 .faq .content-wrapper{
@@ -607,8 +657,13 @@ flex-flow: row wrap;
 aside .content-wrapper .form,
 aside .content-wrapper .form-description{
     width: 40%;
+    padding: 20px;
 }
 
+aside .form-description{
+    width: 40%; 
+    padding:20px;
+}
 /** FEATURES **/ 
 
 .features h2 {
@@ -653,10 +708,11 @@ aside .content-wrapper .form-description{
     width: 100%;
 }
 
-.faq-content {
-    flex-basis: 35%;
-    flex-flow: row wrap;
+.faq .question{
+    flex-basis: 45%;
 }
+
+
   }
 
 
