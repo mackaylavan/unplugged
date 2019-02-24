@@ -147,7 +147,7 @@ width: 100%;
 }
 
 figure{
-
+margin: 0;
 }
 
 address{
@@ -266,6 +266,14 @@ footer .social-icons {
 
 /***************** MOBILE STYLES ***************************/ 
 
+header figure {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
 /**------- HOMEPAGE -----------**/ 
 
 /** HERO AREA **/ 
@@ -274,6 +282,9 @@ footer .social-icons {
 display: flex;
 justify-content: center;
 align-items: center;
+background: url('../img/hero-img.jpg') center no-repeat #333;
+background-size: cover;
+height: 500px;
 }
 
 .hero-area h1{
@@ -299,6 +310,8 @@ background: #527158;
 display: flex;
 justify-content: center;
 flex-flow: row wrap;
+background: url('../img/features-bg.jpg') center no-repeat #333;
+background-size: cover;
 }
 
 .features h2 {
@@ -348,6 +361,7 @@ background: #2a423a;
 width: 55%;
 margin: 20px 0;
 }
+
 
 /**------- ABOUT -----------**/ 
 
@@ -507,6 +521,14 @@ background: #2a423a;
 
   }
 
+  header figure {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
   header .content-wrapper{
     width: 100%;
     justify-content: space-between;
@@ -568,6 +590,10 @@ background: #2a423a;
   .reviews article div{
   width: 50%;
   }
+
+  .reviews figure{
+    width: 45%;
+}
 
   /** FOOTER **/ 
   
@@ -641,6 +667,13 @@ background: #2a423a;
       max-width: 960px;
   }
 
+  header figure {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
   /**------------ HOMEPAGE -------------------**/ 
 
 .hero-area h1{
