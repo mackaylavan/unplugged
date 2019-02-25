@@ -223,7 +223,11 @@ footer .content-wrapper{
     width: 55%;
     margin: 50px 0;
     }
-    
+
+footer .contact {
+        margin-bottom: 50px;
+      }
+
 footer p{
      margin: 0px;
     }
@@ -247,7 +251,15 @@ footer .social-icons {
     footer .copyright {
         margin: 20px 0;
       }
+/** 
+footer {
+  flex-direction: column;
+}
 
+
+
+
+**/
 
       aside .form {
         margin-top: 30px;
@@ -292,7 +304,7 @@ header figure {
 .hero-area{
 display: flex;
 justify-content: center;
-align-items: center;
+flex-flow: row wrap;
 background: url('../img/hero-img.jpg') center no-repeat #333;
 background-size: cover;
 height: 500px;
@@ -301,7 +313,11 @@ height: 500px;
 .hero-area h1{
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    margin: 20px; 
+    margin: 0;
+}
+
+.hero-area .content-wrapper{
+    margin: 30px;
 }
 
 /** ASIDE **/ 
@@ -360,7 +376,7 @@ margin: 30px 0;
 display: flex;
 justify-content: center;
 align-items: center;
-flex-flow: column wrap;
+flex-flow: row wrap;
 margin: 20px;
 }
 
@@ -419,13 +435,10 @@ flex-flow: row wrap;
 background: #2a423a;
 }
 
-.contact-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column wrap;
+.contact-content p {
     margin: 0;
   }
+
 
 /**----------- FAQ---------------------- **/
 
@@ -643,6 +656,9 @@ background: #2a423a;
   .reviews figure{
     width: 45%;
 }
+.reviews h4{
+    margin: 0;
+}
 
   /** FOOTER **/ 
   
@@ -687,7 +703,9 @@ background: #2a423a;
     overflow: hidden;
     position: relative;
 }
-
+.contact-section .content-wrapper{
+    max-width:100%;
+}
 
   .contact-section
   .content-wrapper h2 {
@@ -700,6 +718,8 @@ background: #2a423a;
     justify-content: space-between;
     align-items: flex-start;
     }
+
+    
 
 /**------------------- FAQ -------------------------**/
     
@@ -764,7 +784,7 @@ aside .form-description{
 }
 
 .features article{
-    flex-basis: 35%;
+    flex-basis: 32%;
     }
 
     .features i {
@@ -784,12 +804,25 @@ aside .form-description{
 
 /** FOOTER **/ 
 
-    .footer-content {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 20%;
-        }
+footer .content-wrapper {
+    width: 65%;
+    margin: 100px 0;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  footer .contact {
+    margin-bottom: 0;
+  }
+
+  footer .copyright {
+    width: 100%;
+  }
+
 
         
 /**----------------- ABOUT -----------------------**/      
@@ -809,9 +842,11 @@ aside .form-description{
 
 
 .contact-section .content-wrapper h2 {
+    width: 100%;
     margin-bottom: 40px;
 }
 
+}
 /**----------------- FAQ -----------------------**/      
         
 .faq h2 {
