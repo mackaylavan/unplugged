@@ -375,7 +375,7 @@ background: #638066;
 .map figure{
     width: 100%;
     height: 0;
-    padding-bottom: 80%;
+    padding-bottom: 93%;
     overflow: hidden;
     position: relative;
 }
@@ -643,6 +643,15 @@ background: #2a423a;
       width: 40%;
   }
 
+  .map figure{
+    width: 100%;
+    height: 0;
+    padding-bottom: 45%;
+    overflow: hidden;
+    position: relative;
+}
+
+
   .contact-section
   .content-wrapper h2 {
       width: 80%; 
@@ -744,6 +753,15 @@ aside .form-description{
 .contact-section .content-wrapper h2 {
       width: 100%;
 }
+
+.map figure{
+    width: 100%;
+    height: 0;
+    padding-bottom: 37%;
+    overflow: hidden;
+    position: relative;
+}
+
 
 .contact-section .content-wrapper h2 {
     margin-bottom: 40px;
