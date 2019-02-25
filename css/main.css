@@ -112,6 +112,7 @@ ul,
 ol {
 font-size: 1.125em;
 text-emphasis: none;
+padding: 0;
 }
 
 a{
@@ -198,6 +199,7 @@ header nav {
   header nav ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 100%;
     text-transform: uppercase;
     list-style: none;
